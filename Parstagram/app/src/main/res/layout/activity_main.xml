@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/captionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:ems="10"
+        android:hint="Enter Caption Here"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/pictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/captionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Take Picture" />
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/pictureButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Post" />
+</RelativeLayout>
